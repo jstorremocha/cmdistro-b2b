@@ -1,0 +1,165 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    background: {{ section.settings.background }};
+    color: {{ section.settings.text }};
+  }
+</style>
+
+<section class="section {% if section.settings.background != settings.background %}section--isolated section--tight{% endif %} section--text-centered" data-section-id="{{ section.id }}" data-section-type="newsletter">
+  <div class="container container--giga-narrow">
+    {%- if section.settings.title != blank -%}
+      <h2 class="heading h3">{{ section.settings.title | escape }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.content != blank -%}
+      <div class="rte">
+        <p>I'd like to subscribe to the Inside Out European Shop Newsletter newsletter</p>
+      </div>
+    {%- endif -%}
+
+    {%- assign newsletter_id = 'newsletter-' | append: section.id -%}
+
+    <div class="newsletter newsletter--compact">
+      {%- form 'customer', id: 'insideoutshop-de-website-newsletter-signup', class: 'form newsletter__form' -%}{% comment %} 
+        {%- if form.posted_successfully? -%}
+          <p class="alert alert--success">{{ 'home_page.newsletter.success' | t }}</p>
+        {%- else -%}
+          {%- if form.errors -%}
+            <p class="alert alert--error">{{ form.errors.messages['email'] }}</p>
+          {%- endif -%}
+ {% endcomment %}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+
+          <input type="hidden" name="js_url" id="js_url" value="https://subs.sonymusicfans.com/submit">
+          <input type="hidden" name="ae_segment_id" id="ae_segment_id" value="1700059">
+          <input type="hidden" name="ae_brand_id" id="ae_brand_id" value="3447682">
+          <input type="hidden" name="ae_activities" id="ae_activities" value='{"actions":{"formsubmission":98135,"secondaryformsubmission":0},"mailing_list_optins":{"a0S2400000Ngs2CEAR":98136}}'>
+          <input type="hidden" name="ae" id="ae" value="519452a447eb9041d9c36f2c39d411d9f8a2f6f5acf47be68195a347f7032abe">
+          <input type="hidden" name="form" value="218363">
+
+          <div class="form__input-row">
+            <div class="form__input-wrapper form__input-wrapper--labelled">
+              <input type="email" id="newsletter[{{ section.id }}][contact][email]" name="contact[email]" class="form__field {% if section.settings.background != settings.background %}form__field--borderless{% endif %} form__field--text" required>
+              <label for="newsletter[{{ section.id }}][contact][email]" class="form__floating-label">{{ 'home_page.newsletter.input' | t }}</label>
+            </div>
+
+            <button type="submit" class="form__submit button button--primary">{{ 'home_page.newsletter.submit' | t }}</button>
+          </div>
+{% comment %} 
+        {%- endif -%}
+      {%- endform -%}
+ {% endcomment %}
+
+
+          <!-- SMF NL starts -->
+
+          <form id="insideoutshop-de-website-newsletter-signup">
+            <input type="hidden" name="js_url" id="js_url" value="https://subs.sonymusicfans.com/submit">
+            <input type="hidden" name="ae_segment_id" id="ae_segment_id" value="1700059">
+            <input type="hidden" name="ae_brand_id" id="ae_brand_id" value="3447682">
+            <input type="hidden" name="ae_activities" id="ae_activities" value='{"actions":{"formsubmission":98135,"secondaryformsubmission":0},"mailing_list_optins":{"a0S2400000Ngs2CEAR":98136}}'>
+            <input type="hidden" name="ae" id="ae" value="519452a447eb9041d9c36f2c39d411d9f8a2f6f5acf47be68195a347f7032abe">
+            <input type="hidden" name="form" value="218363">
+            <!-- Form Fields -->
+            <div class="form-group" data-validation="Enter a valid email address">
+              <label for="field_email_address">
+                Email Address
+              </label>
+              <input class="form-control" id="field_email_address" name="field_email_address" type="text">
+            </div>
+              <div class="input-group hidden">
+              <div class="checkbox">
+                <label for="default_mailing_list">
+                  <input type="hidden" id="default_mailing_list" name="default_mailing_list" value="a0S2400000Ngs2CEAR">
+                  <p>I'd like to subscribe to the Inside Out European Shop Newsletter newsletter</p>				</label>
+              </div>
+            </div>
+                    <!-- Submit Button -->
+              <button type="submit" class="btn btn-default">SUBSCRIBE</button>
+            </form>
+            <!-- jQuery CDN -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <!-- Campaign JS Code -->
+            <script>
+            jQuery(document).ready(function ($) {
+              $("#insideoutshop-de-website-newsletter-signup").on("submit", function (e) {
+                // Prevent default browser actions on form submission.
+                e.preventDefault();
+                // Get all the form user submitted data and get it ready to be sent.
+                var data = $(this).serialize();
+                // POST all the data to the SMF submission endpoint URL.
+                $.ajax({
+                  type: "POST",
+                  url: "https://subs.sonymusicfans.com/submit",
+                  dataType: "json",
+                  data: data,
+                  xhrFields: {
+                    withCredentials: false
+                  },
+                  success: function (data) {
+                    // Do things on successful submission.
+                    alert("Submitted!");
+                    e.preventDefault();
+                  },
+                  error: function (err) {
+                    // Do things when submission has an error.
+                    alert("An error has occured!");
+                  }
+                });
+              });
+            });
+            </script>
+
+          <!-- SMF NL ends -->
+
+
+
+
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Newsletter"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>A short sentence describing what someone will receive by subscribing</p>"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text",
+      "label": "Text",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Promotional",
+      "name": "Newsletter",
+      "settings": {
+      }
+    }
+  ]
+}
+{% endschema %}
