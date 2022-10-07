@@ -2,6 +2,7 @@
   "sections": {
     "slideshow": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "53b9c7e0-144a-4ddc-b033-4c630004361b": {
           "type": "image",
@@ -211,22 +212,12 @@
         "round_images": false,
         "show_collection_title": true
       }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "title": "Newsletter",
-        "content": "<p>Subscribe to our newsletter!<\/p>",
-        "background": "#ffffff",
-        "text": "#666666"
-      }
     }
   },
   "order": [
     "slideshow",
     "featured-collection",
     "featured-products",
-    "collection-list",
-    "newsletter"
+    "collection-list"
   ]
 }
