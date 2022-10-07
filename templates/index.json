@@ -139,7 +139,7 @@
       "type": "featured-collection",
       "disabled": true,
       "settings": {
-        "collection": "new-releases",
+        "collection": "frontpage",
         "title": "New Releases",
         "products_count": 12,
         "layout": "vertical",
