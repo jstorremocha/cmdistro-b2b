@@ -125,8 +125,8 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "pre-order",
-        "title": "Pre Order",
+        "collection": "new-arrivals",
+        "title": "New Arrivals",
         "products_count": 16,
         "layout": "vertical",
         "stack_products": true,
@@ -137,6 +137,7 @@
     },
     "featured-products": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "new-releases",
         "title": "New Releases",
