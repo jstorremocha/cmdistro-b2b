@@ -157,7 +157,6 @@
           "type": "collection",
           "settings": {
             "collection": "inside-out-releases",
-            "image": "shopify:\/\/shop_images\/IOM_Logo.jpg",
             "link": ""
           }
         },
