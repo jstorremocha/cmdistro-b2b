@@ -140,8 +140,8 @@
       "type": "featured-collection",
       "disabled": true,
       "settings": {
-        "collection": "frontpage",
-        "title": "New Releases",
+        "collection": "inside-out-releases",
+        "title": "InsideOut Releases",
         "products_count": 12,
         "layout": "vertical",
         "stack_products": true,
