@@ -138,6 +138,7 @@
     },
     "featured-products": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "inside-out-releases",
         "title": "InsideOut Releases",
@@ -151,24 +152,25 @@
     },
     "collection-list": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "angelus-apatrida",
+            "collection": "inside-out-releases",
+            "image": "shopify:\/\/shop_images\/IOM_Logo.jpg",
             "link": ""
           }
         },
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "at-the-gates",
+            "collection": "century-media-releases",
             "link": ""
           }
         },
         "collection-5": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "dark-tranquillity",
             "link": ""
@@ -176,6 +178,7 @@
         },
         "collection-4": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "insomnium",
             "link": ""
@@ -183,6 +186,7 @@
         },
         "collection-6": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "napalm-death",
             "link": ""
@@ -190,8 +194,17 @@
         },
         "collection-1": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "omnium-gatherum",
+            "link": ""
+          }
+        },
+        "59a6a2a9-2812-4403-b845-965c25129d94": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
             "link": ""
           }
         }
@@ -202,10 +215,11 @@
         "collection-5",
         "collection-4",
         "collection-6",
-        "collection-1"
+        "collection-1",
+        "59a6a2a9-2812-4403-b845-965c25129d94"
       ],
       "settings": {
-        "title": "Featured Artists",
+        "title": "Releases By Label",
         "link_title": "View all",
         "link": "",
         "round_images": false,
