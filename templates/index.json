@@ -138,7 +138,6 @@
     },
     "featured-products": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "collection": "inside-out-releases",
         "title": "InsideOut Releases",
