@@ -122,9 +122,9 @@
           "desktop_navigation_open_trigger": "hover",
           "show_navigation_social_media": true,
           "navigation_phone_number": "",
-          "navigation_email": "shop@cmdistro.de",
+          "navigation_email": "wholesale@cmdistro.de",
           "show_condensed_search": true,
-          "show_search_filter": false,
+          "show_search_filter": true,
           "search_menu": "",
           "show_search_menu_title": true
         }
