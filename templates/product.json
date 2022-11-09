@@ -53,6 +53,24 @@
           "settings": {
             "content": "<p>Dist. number: {{ product.metafields.sme.distribution_number.value }}<\/p>"
           }
+        },
+        "4bc9c79a-7355-4cf5-9c57-820c5d3516e8": {
+          "type": "text",
+          "settings": {
+            "content": "<p>FSK: {{ product.metafields.sme.fsk.value }}<\/p>"
+          }
+        },
+        "283ed45e-b8f8-48b7-b40d-6fcb12e4914d": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Episode: {{ product.metafields.sme.episode.value }}<\/p>"
+          }
+        },
+        "21cbd82c-2386-43ae-9769-1ac1b42e6c2d": {
+          "type": "text",
+          "settings": {
+            "content": "<p>{{ product.metafields.sme.additional_information.value }}<\/p>"
+          }
         }
       },
       "block_order": [
@@ -62,7 +80,10 @@
         "description",
         "31335ddd-c1ea-40e0-a1af-6a2e064faae3",
         "abfdae60-cfb6-47c4-9892-9c6d5db777f5",
-        "9f8f8e49-899d-4ed8-acc0-5059e6d33878"
+        "9f8f8e49-899d-4ed8-acc0-5059e6d33878",
+        "4bc9c79a-7355-4cf5-9c57-820c5d3516e8",
+        "283ed45e-b8f8-48b7-b40d-6fcb12e4914d",
+        "21cbd82c-2386-43ae-9769-1ac1b42e6c2d"
       ],
       "settings": {
         "image_size": "small",
