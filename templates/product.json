@@ -23,6 +23,15 @@
             "low_inventory_threshold": 0
           }
         },
+        "789626d1-3486-4bdd-8004-3f80c7f3b43c": {
+          "type": "liquid",
+          "settings": {
+            "title": "Stock Level Info:",
+            "sku": "",
+            "liquid": "{{ product.variants.first.inventory_quantity }}",
+            "display_mode": "collapse"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -37,7 +46,6 @@
         },
         "31335ddd-c1ea-40e0-a1af-6a2e064faae3": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "content": "<p>{{ product.metafields.sme.release_name.value }}<\/p>"
           }
@@ -76,6 +84,7 @@
       "block_order": [
         "product_meta",
         "variant_selector",
+        "789626d1-3486-4bdd-8004-3f80c7f3b43c",
         "buy_buttons",
         "description",
         "31335ddd-c1ea-40e0-a1af-6a2e064faae3",
