@@ -90,9 +90,11 @@
     },
     "collection-list": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "collection-2": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "inside-out-releases",
             "link": ""
@@ -100,6 +102,7 @@
         },
         "collection-3": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "century-media-releases",
             "link": ""
