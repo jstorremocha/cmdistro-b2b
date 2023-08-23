@@ -413,7 +413,7 @@
         "other": "In stock ({{count}} units), ready to be shipped"
       },
       "add_to_cart": "Add to cart",
-      "sold_out": "Out Of Stock",
+      "sold_out": "Ask us about re-stock",
       "pre_order": "Pre-order",
       "unavailable": "Unavailable",
       "contact_us": "Contact us",
