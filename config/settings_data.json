@@ -132,8 +132,15 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
           "e54d6367-cb65-4131-84f4-349fc305b78c": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "title": "",
               "content": "<p><a href=\"https:\/\/cmdistro-eu.myshopify.com\/account\" title=\"https:\/\/cmdistro-eu.myshopify.com\/account\">My account<\/a><\/p>"
@@ -141,6 +148,7 @@
           },
           "b1ff6c53-266c-47e1-8025-b1a6d9ba73b2": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "title": "",
               "content": "<p><\/p><p><a href=\"\/pages\/privacy-statement\" title=\"Privacy statement\">Privacy Statement<\/a><\/p><p><a href=\"\/pages\/return-policy\" title=\"Return policy\">Return Policy<\/a><\/p>"
@@ -148,16 +156,10 @@
           },
           "footer-0": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "title": "",
               "content": "<p><a href=\"\/pages\/imprint\" title=\"Imprint\">Imprint<\/a><\/p><p><\/p>"
-            }
-          },
-          "footer-1": {
-            "type": "links",
-            "disabled": true,
-            "settings": {
-              "menu": "footer"
             }
           },
           "footer-2": {
@@ -177,10 +179,10 @@
           }
         },
         "block_order": [
+          "footer-1",
           "e54d6367-cb65-4131-84f4-349fc305b78c",
           "b1ff6c53-266c-47e1-8025-b1a6d9ba73b2",
           "footer-0",
-          "footer-1",
           "footer-2",
           "4a5f8bdc-021f-47d6-9dc9-422f54d43095"
         ],
