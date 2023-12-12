@@ -2,11 +2,10 @@
   "sections": {
     "a57f13ef-bd41-4516-9d01-a40a1fa11701": {
       "type": "rich-text",
-      "disabled": true,
       "settings": {
-        "text_width": "wide",
-        "title": "Happy Holidays!",
-        "content": "<p>We are going on <strong>Christmas break <\/strong><em><strong>until January 02<\/strong><\/em>. You can still order as usual, but there will be delays in your shipment.<br\/><em><strong>We would like to thank you for a fantastic 2022, wish you happy holidays and a good start for 2023!<\/strong><\/em><\/p>",
+        "text_width": "regular",
+        "title": "HAPPY HOLIDAYS!",
+        "content": "<h5>We are going on <strong>Christmas break <\/strong><em><strong>from December 18 until January 02<\/strong><\/em>. You can still order as usual, but there will be delays in your shipment.<br\/><em><strong>We would like to thank you for a fantastic 2023, wish you happy holidays and a good start for 2024!<\/strong><\/em><\/h5>",
         "button_text": "Our products",
         "button_link": "shopify:\/\/collections\/all"
       }
@@ -90,7 +89,6 @@
     },
     "collection-list": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "collection-2": {
           "type": "collection",
@@ -158,6 +156,7 @@
         "collection-1",
         "59a6a2a9-2812-4403-b845-965c25129d94"
       ],
+      "disabled": true,
       "settings": {
         "title": "Releases By Label",
         "link_title": "View all",
